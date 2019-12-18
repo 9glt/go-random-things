@@ -1,6 +1,9 @@
 package main
 
+
+// original: https://github.com/patrickmn/go-cache/blob/5633e0862627c011927fa39556acae8b1f1df58a/sharded.go#L40
 // consitent hashing
+// all inline 
 
 func djb33(seed uint32, k string) uint32 {
 	var (
